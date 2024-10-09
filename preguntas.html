@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        //Creamos un array de objetos que contienen las preguntas y respuestas
+        var preguntas = [
+            {pregunta: "Capital de espa a", respuesta: "madrid"},
+            {pregunta: "Capital de francia", respuesta: "paris"},
+            {pregunta: "Capital de Alemania", respuesta: "berlin"},
+            {pregunta: "Capital de Italia", respuesta: "roma"},
+            {pregunta: "Capital de Portugal", respuesta: "lisboa"}
+        ];
+
+        //Iniciamos una variable para contar los aciertos
+        var puntaje = 0;
+
+        //Recorremos el array de preguntas
+        for (var i = 0; i < preguntas.length; i++) {
+            //Pedimos al usuario que responda a la pregunta
+            var respuesta = prompt(preguntas[i].pregunta);
+            //Si la respuesta es correcta, sumamos 1 al puntaje
+            if(respuesta === preguntas[i].respuesta){
+                puntaje++;
+            }
+        }
+
+        //Mostramos el puntaje total
+        alert("Tu puntaje es de " + puntaje + "/" + preguntas.length);
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
